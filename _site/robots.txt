@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jack-r-lantern.github.io/sitemap.xml
+Sitemap: http://172.17.0.2:4000/sitemap.xml
