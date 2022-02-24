@@ -18,3 +18,4 @@ sort: 1
 
 ## printk
 ## dump_stack
+## ftrace

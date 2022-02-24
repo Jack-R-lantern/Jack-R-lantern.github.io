@@ -29,7 +29,7 @@ printk("<3>" error message...\n);
 printk("default loglevel...\n");
 ```
 ## printk로 함수 심벌 정보를 보는 방법
-https://github.com/raspberrypi/linux/blob/rpi-4.19.y/kernel/workqueue.c
+### [sourcecode](https://github.com/raspberrypi/linux/blob/rpi-4.19.y/kernel/workqueue.c)
 ```c
 static void insert_wq_barrier(struct pool_workqueue *pwq,
                               struct wq_barrier *barr,
@@ -48,7 +48,8 @@ static void insert_wq_barrier(struct pool_workqueue *pwq,
 * \_\_builtin_return_address(0): 현재 실행중인 함수를 호출한 함수의 주소
 
 `%pS`는 아규먼트로 지정한 주소를 심벌로 변환해 출력합니다.
-
+### result
+![printk](../../assets/images/../../../assets/images/linux/kernel/trace/printk.jpg)
 ## printk를 쓸 때 주의해야 할 점
 printk를 사용할 때는 printk의 호출 빈도를 반드시 체크해야 합니다. \
 리눅스 커널에서 1초에 수백번 이상 호출되는 함수에 printk를 사용하면 시스템이 락업(Lockup)되거나 커널 패닉으로 오동작할 수 있습니다.
